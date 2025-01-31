@@ -12,8 +12,8 @@ export default function Health({ route }) {
         <Text>{student.name}</Text>
         <Text>Last Checkup Date: {health.last_checkup}</Text>
         <Text>Health Records</Text>
-        <Text>Height: {health.height}</Text>
-        <Text>Weight: {health.weight}</Text>
+        <Text>Height: {health.height} CM</Text>
+        <Text>Weight: {health.weight} KG</Text>
         <Text>Heart Rate: {health.heart_rate}</Text>
         <Text>Blood Pressure: {health.blood_pressure}</Text>
         <Text>Exercise Frequency: {health.exercise_frequency}</Text>
