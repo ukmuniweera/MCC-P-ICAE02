@@ -16,21 +16,21 @@ export default function BMI({ route }) {
       setFigure(require('../assets/bmipic/bmi1.jpg'));
     } else if (bmi >= 18.5 && bmi <= 24.9) {
       setRange('Normal Weight');
-      setFigure(require('../assets/bmipic/bmi2.jpg'));
+      setFigure(require('../assets/bmipic/bmi6.jpg'));
     } else if (bmi >= 25.0 && bmi <= 29.9) {
       setRange('Overweight');
-      setFigure(require('../assets/bmipic/bmi3.jpg'));
+      setFigure(require('../assets/bmipic/bmi2.jpg'));
     } else if (bmi >= 30.0 && bmi <= 34.9) {
       setRange('Obesity Class I');
-      setFigure(require('../assets/bmipic/bmi4.jpg'));
+      setFigure(require('../assets/bmipic/bmi3.jpg'));
     } else if (bmi >= 35.0 && bmi <= 39.9) {
       setRange('Obesity Class II');
-      setFigure(require('../assets/bmipic/bmi5.jpg'));
+      setFigure(require('../assets/bmipic/bmi4.jpg'));
     } else {
       setRange('Obesity Class III');
-      setFigure(require('../assets/bmipic/bmi6.jpg'));
+      setFigure(require('../assets/bmipic/bmi5.jpg'));
     }
-  },[bmi])
+  }, [bmi])
 
   return (
     <ScrollView>

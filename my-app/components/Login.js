@@ -7,14 +7,14 @@ export default function Login() {
     const [inputUserName, setInputUserName] = useState('');
     const [inputPassword, setInputPassword] = useState('');
     const [error, setError] = useState('');
-    
+
     const navigation = useNavigation();
 
     const handleLogin = () => {
         const student = students.find(student => student.username === inputUserName && student.password === inputPassword);
         if (student) {
             setError('');
-            navigation.navigate('ProfileTap',{student})
+            navigation.navigate('ProfileTap', { student })
         } else {
             setError('Invalid username or password');
         }
