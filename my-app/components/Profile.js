@@ -3,7 +3,7 @@ import { Image, ScrollView, Text, View } from 'react-native';
 
 export default function Profile({ route }) {
     const { student } = route.params;
-
+    
     return (
         <ScrollView>
             <View>
